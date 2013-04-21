@@ -32,7 +32,7 @@ The server listens at (http://localhost:8080/), and assembles pages on request f
 
 ### More
 
-[Install bem-tools globally or locally](http://bem.info/tools/bem/installation/).
+ - [Install bem-tools globally or locally](http://bem.info/tools/bem/installation/).
 
 # Step 2. Create the page layout
 

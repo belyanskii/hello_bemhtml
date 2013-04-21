@@ -250,7 +250,6 @@ block b-hello and item elements instead of the default <div>. Template for the b
             content: ['Hello, ', applyNext(), '!']
         }
     }
-
 ````
 
 ### Here:

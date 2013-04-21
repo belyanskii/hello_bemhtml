@@ -2,7 +2,7 @@
 
 This guide will help you to try the BEMHTML template engine and understand its basic principles, after going seven simple steps.
 
-# Step 1. Initialize project
+## Step 1. Initialize project
 
 Use the blank project from BEM developers:
 
@@ -34,7 +34,7 @@ The server listens at (http://localhost:8080/), and assembles pages on request f
 
  - [Install bem-tools globally or locally](http://bem.info/tools/bem/installation/).
 
-# Step 2. Create the page layout
+## Step 2. Create the page layout
 
 Static layouts of HTML placed in the directory desktop.bundles.
 
@@ -78,7 +78,7 @@ Review the results of assembly page in the browser: (http://localhost:8080/deskt
  - [Bem-bl blocks library](http://bem.github.io/bem-bl/index.en.html)
  - [Bem-tools docs](http://ru.bem.info/tools/)
 
-# Step 3. Add block
+## Step 3. Add block
 
 Let's create a very simple layout - will place on our new page one block test with the text Hello, BEMHTML!.
 
@@ -123,7 +123,7 @@ Look at result. Fragment of HTML-code that describes the body of the page looks 
  - `b-hello` block corresponds to a div;
  - attribute of class contains block name.
 
-# Step 4. Write the template: greeting by pattern
+## Step 4. Write the template: greeting by pattern
 
 Will make block `b-hello` more universal - let it generates a greeting for the specified name.
 By specifying a different name, you can use the same block `b-hello` on different pages or repeatedly on the same page.
@@ -172,7 +172,7 @@ HTML-result:
  - [BEMHTML docs. Standard mods (ru)](https://github.com/bem/bemhtml/blob/master/common.docs/reference/reference.ru.md#%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5-%D0%BC%D0%BE%D0%B4%D1%8B)
  - [BEMHTML docs. Context fields (ru)](https://github.com/bem/bemhtml/blob/master/common.docs/reference/reference.ru.md#%D0%9F%D0%BE%D0%BB%D1%8F-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0)
 
-# Step 5. Rewrite template: the generation of a list by element of array
+## Step 5. Rewrite template: the generation of a list by element of array
 
 With the development of project may need complicate the `b-hello` block, for example to display multiple greetings for the given list of names.
 
@@ -228,7 +228,7 @@ As a result of the use of templates we get a HTML-page with a block of three gre
     </div>
 ````
 
-# Step 6. Supplement the template: modify HTML-tags
+## Step 6. Supplement the template: modify HTML-tags
 
 At first glance, the introduction of elements of the item may seem redundant,
 but it can be useful to fully appreciate at the time when you want to make a block of greetings in the form of a bulleted list.
@@ -271,7 +271,7 @@ HTML-result:
     </ul>
 ````
 
-# Step 7. Decoration and behavior of block (CSS and JS)
+## Step 7. Decoration and behavior of block (CSS and JS)
 
 When a block is created in the project project-stub default files were generated three technologies:
 

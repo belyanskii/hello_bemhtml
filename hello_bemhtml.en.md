@@ -30,7 +30,7 @@ The server listens at (http://localhost:8080/), and assembles pages on request f
 
 <blockquote> NB: At the first assembly to the project directory are copied the bemhtml and `bem-bl` libraries </blockquote>
 
-## More
+### More
 
 [Install bem-tools globally or locally](http://bem.info/tools/bem/installation/).
 
@@ -64,7 +64,7 @@ Let's look at source code of page (desktop.bundles/test/test.bemjson.js):
     })
 ````
 
-Here used:
+### Here used:
 
  - `b-page` block from block library `bem-bl`.
 
@@ -72,7 +72,7 @@ Here used:
 
 Review the results of assembly page in the browser: (http://localhost:8080/desktop.bundles/test/test.html)
 
-## More
+### More
 
  - [BEMJSON docs (ru)](https://github.com/bem/bemhtml/blob/master/common.docs/reference/reference.ru.md#%D0%A1%D0%B8%D0%BD%D1%82%D0%B0%D0%BA%D1%81%D0%B8%D1%81-bemjson)
  - [Bem-bl blocks library](http://bem.github.io/bem-bl/index.en.html)
@@ -103,7 +103,7 @@ Edit the source of BEMJSON (desktop.bundles / test / test.bemjson.js):
     })
 ````
 
-Here:
+### Here:
 
  - `b-hello` block placed at page content (content field of `b-page` block);
  - text of greetings in content field of `b-hello` block.
@@ -118,7 +118,7 @@ Look at result. Fragment of HTML-code that describes the body of the page looks 
     </body>
 ````
 
-Here:
+### Here:
 
  - `b-hello` block corresponds to a div;
  - attribute of class contains block name.
@@ -150,7 +150,7 @@ Let's write a template for the `b-hello` block in the file desktop.blocks / b-he
     block b-hello, content: ['Hello, ', this.ctx.name, '!']
 ````
 
-Here:
+### Here:
 
  - block `b-hello`, content — predicate template (will invoked during the processing of block `b-hello` in standard mode content);
  - ['Hello, ', this.ctx.name, '!'] - template body (when outputting HTML, performed the concatenation of strings - the array elements);
@@ -166,7 +166,7 @@ HTML-result:
     </body>
 ````
 
-## More:
+### More:
 
  - [BEMHTML docs. Syntax (ru)](https://github.com/bem/bemhtml/blob/master/common.docs/reference/reference.ru.md#%D0%A1%D0%B8%D0%BD%D1%82%D0%B0%D0%BA%D1%81%D0%B8%D1%81-bemhtml)
  - [BEMHTML docs. Standard mods (ru)](https://github.com/bem/bemhtml/blob/master/common.docs/reference/reference.ru.md#%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5-%D0%BC%D0%BE%D0%B4%D1%8B)
@@ -209,7 +209,7 @@ The task of template now is that for each name in the list generate an element i
     }
 ````
 
-Here in the body of the template used:
+### Here in the body of the template used:
 
  - shorthand predicates using {}. Equivalent to the two templates with predicates: block b-hello, content, block b-hello, elem item, content;
  - templates by [content](https://github.com/bem/bemhtml/blob/master/common.docs/reference/reference.ru.md#content) mode;
@@ -253,7 +253,7 @@ block b-hello and item elements instead of the default <div>. Template for the b
 
 ````
 
-Here:
+### Here:
 
  - again used a nested record predicates, only four templates: block b-hello, tag, block b-hello, content, block b-hello,
      elem item, tag, block b-hello, elem item, content;
@@ -321,11 +321,11 @@ Suppose, for example, when you click on the block a warning is displayed with th
     })
 ````
 
-## More:
+### More:
 
  - [Description for JS-Framework i-bem.js](http://h.yandex.net/?http%3A%2F%2Fbem.github.com%2Fbem-bl%2Fsets%2Fcommon-desktop%2Fi-bem%2Fi-bem.ru.html)
 
-# What read next
+### What read next
 
  - [BEMHTML docs](https://github.com/bem/bemhtml/blob/master/common.docs/reference/reference.ru.md)
  - [Blocks library bem-bl](http://bem.github.com/bem-bl/index.en.html)
